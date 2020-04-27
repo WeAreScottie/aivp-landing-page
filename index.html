@@ -15,7 +15,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-129110763-1');
+    gtag('config', 'UA-129110763-10');
   </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -35,7 +35,11 @@
             $( "#about-us-content" ).load( "https://wearescottie.github.io/aivp-landing-page/content" );
                 });
             </script>
-
+            <script type='text/javascript'>
+            $(document).ready(function(){
+            $( "#members-content" ).load( "https://wearescottie.github.io/aivp-landing-page/members-content" );
+                });
+            </script>
 </head>
 
 <body>
@@ -53,10 +57,10 @@
             <a class="nav-link" href="#about-us">About Us</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Members</a>
+            <a class="nav-link" href="#members">Members</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -74,12 +78,13 @@
 
   </header>
 
-  <section id="about-us">
-    <div class="container">
+<!-- About Us Section -->
+  <section>
+    <div class="container" id="about-us">
       <div class="row">
         <div class="col-lg-3">
         </div>
-              <div class="col-lg-6 text-center mt-5">
+              <div class="col-lg-6 text-center" style="margin-top: 75px;">
                 <h1>About Us</h1>
               </div>
               <div id="about-us-content" class="col-12 mt-5 mb-5">
@@ -90,6 +95,45 @@
     </div>
   </div>
   </section>
+<!-- End About Us Section -->
+
+<!-- About Us Section -->
+  <section>
+    <div class="container" id="members">
+      <div class="row">
+        <div class="col-lg-3">
+        </div>
+              <div class="col-lg-6 text-center" style="margin-top: 75px;">
+                <h1>Members</h1>
+              </div>
+              <div id="members-content" class="col-12 mt-5 mb-5">
+              </div>
+        <div class="col-lg-3">
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- End About Us Section -->
+
+<!-- About Us Section -->
+  <section>
+    <div class="container" id="contact">
+      <div class="row">
+        <div class="col-lg-3">
+        </div>
+              <div class="col-lg-6 text-center" style="margin-top: 75px;">
+                <h1>About Us</h1>
+              </div>
+              <div id="about-us-content" class="col-12 mt-5 mb-5">
+              </div>
+        <div class="col-lg-3">
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- End About Us Section -->
 
   <!-- Footer -->
   <footer class="py-5 bg-black">
